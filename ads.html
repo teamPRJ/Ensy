@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	body
+	{
+		background-color: #eeeeff;
+	}
+			.item {
+				max-width: 230px;
+			}
+		p
+		{
+			text-align: center;
+		}
+		table
+		{
+			width: 80%;
+			margin-left: 150px;
+		}
+		div
+		{
+			margin: auto;
+		}
+		</style>
+<title>ADS</title>
+</head>
+<body>
+<h3>Buy our best-selling authors!!</h3>
+		<div id="well-known"/>
+	</div>
+</body>
+<template id="template">
+  <div>
+  	  {{#each authors}}
+    	<div>{{name}}</div>
+      {{/each}}
+  </div>
+</template>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.2/handlebars.js"></script>
+<script>
+	var template = document.getElementById('template').innerHTML;
+	var renderAuthors = Handlebars.compile(template);
+	document.getElementById('well-known').innerHTML = renderAuthors({authors: [{"name": "Hideo Kojima"},{"name": "Darya Dontsova"}]});
+</script>
+</html>

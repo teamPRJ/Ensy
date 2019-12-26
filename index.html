@@ -1,0 +1,44 @@
+<html>
+<head>
+	<style>
+	body
+	{
+		background-color: #eeeeff;
+	}
+			.item {
+				max-width: 230px;
+			}
+		p
+		{
+			text-align: center;
+		}
+		table
+		{
+			width: 80%;
+			margin-left: 150px;
+		}
+		div
+		{
+			margin: auto;
+		}
+		</style>
+<title>Etsy</title>
+<meta charset="utf-8">
+</head>
+<body>
+<h1 style="text-align: center;"> New Etsy </h1>
+
+	<p ><!--#include virtual="/app/categories"--></p>
+	<hr>
+	<div style="height: 100px;"></div>
+	<p><!--#include virtual="/app/items"--></p>
+		<p><!--#include virtual="/app/items"--></p>
+
+	<div style="height: 100px;"></div>
+	<p><!--#include virtual="/app/shops"--></p> 
+	<hr>
+
+	<!--#include file="ads.html"-->
+</body>
+
+</html>
